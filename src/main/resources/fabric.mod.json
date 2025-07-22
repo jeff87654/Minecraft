@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraftmod",
+  "version": "${version}",
+  "name": "Minecraft Mod",
+  "description": "An example mod for Minecraft using Fabric.",
+  "authors": [
+    "jeff87654"
+  ],
+  "license": "MIT",
+  "contact": {
+    "sources": "https://github.com/jeff87654/Minecraft"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.jeff87654.minecraft.MinecraftMod"
+    ],
+    "client": [
+      "com.jeff87654.minecraft.MinecraftModClient"
+    ]
+  },
+  "mixins": [
+    "minecraftmod.mixins.json",
+    "minecraftmod.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric": ">=${fabric_version}"
+  }
+}
