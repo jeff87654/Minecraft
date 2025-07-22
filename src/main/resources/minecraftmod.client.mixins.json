@@ -1,0 +1,10 @@
+{
+  "package": "com.jeff87654.minecraft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MinecraftClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
