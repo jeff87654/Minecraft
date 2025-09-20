@@ -37,12 +37,12 @@ public class MinecraftMod implements ModInitializer {
         // Register the crib block under the mod's namespace.  The identifier
         // consists of the mod ID (minecraftmod) and the path (crib).  This
         // makes the full identifier "minecraftmod:crib".
-        Registry.register(Registries.BLOCK, new Identifier("minecraftmod", "crib"), CRIB);
+        Registry.register(Registries.BLOCK, Identifier.of("minecraftmod", "crib"), CRIB);
 
         // Register the corresponding block item so that players can obtain
         // and place the crib in the world.  Without registering an item the
         // block would exist in the registry but could not be held in an
         // inventory.
-        Registry.register(Registries.ITEM, new Identifier("minecraftmod", "crib"), new BlockItem(CRIB, new Item.Settings()));
+        Registry.register(Registries.ITEM, Identifier.of("minecraftmod", "crib"), new BlockItem(CRIB, new Item.Settings()));
     }
 }
